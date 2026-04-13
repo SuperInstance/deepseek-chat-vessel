@@ -1,0 +1,48 @@
+# CAPABILITY.toml — DeepSeek-Chat Vessel (Run-About)
+
+[vessel]
+name = "deepseek-chat-vessel"
+class = "run-about"
+role = "Iterative high-token workhorse"
+realm = "Lucineer"
+captain = "Casey"
+launched = "2026-04-12"
+
+[sisters]
+reasoner = "deepseek-reasoner-vessel"  # deep reflection partner
+relationship = "asymmetric symbiosis"
+
+[capabilities]
+primary = ["code-modification", "spread-apply", "tool-orchestration", "iterative-loops"]
+secondary = ["pattern-extraction", "log-keeping", "reflection-feeding"]
+model = "deepseek-chat"
+max_tokens = 8192
+strengths = ["high-throughput", "fast turnaround", "practical iteration", "pattern repetition"]
+weaknesses = ["deep reasoning", "self-correction on novel problems"]
+
+[protocol]
+loop = "modify-spread-tool-reflect"
+reflection_partner = "deepseek-reasoner-vessel"
+log_format = "structured JSONL"
+emergent_vocabulary = true
+
+[workflow]
+# The Spreader Loop:
+# 1. MODIFY — make changes to target (code, docs, data)
+# 2. SPREAD — propagate changes across related artifacts
+# 3. TOOL — verify changes with compilation, tests, lint
+# 4. LOG — record iteration with timing, tokens, outcome
+# 5. REFLECT — (via Reasoner) analyze loop patterns, suggest abstractions
+#
+# Over time, the Reasoner's reflection logs build emergent vocabulary:
+# - Tile patterns: reusable modify-spread sequences
+# - Higher-level logic: abstracted from repeated low-level loops
+# - Meta-loops: loops that improve other loops
+
+[tiles]
+# Vocabulary grows as the run-about works
+# Each completed loop adds potential tiles
+level_0 = ["single-file-edit", "test-run", "compile-check"]
+level_1 = ["multi-file-propagation", "pattern-match-replace", "batch-verify"]
+level_2 = ["cross-repo-spread", "domain-transformation", "architectural-refactor"]
+level_3 = ["loop-optimization", "self-improving-workflow", "emergent-abstraction"]
